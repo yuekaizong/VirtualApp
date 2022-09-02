@@ -2,12 +2,11 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 31
     defaultConfig {
         applicationId "io.virtualapp"
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 31
         versionCode 24
         versionName "1.2.5"
         multiDexEnabled true
@@ -46,6 +45,7 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
+    ndkVersion '24.0.8215888'
 }
 
 dependencies {
